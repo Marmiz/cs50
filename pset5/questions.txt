@@ -1,0 +1,11 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis, is a lung desease and, indeed the longest word in the english dictnoray (45 letters).
+1.  'getrusage' return the running time statistics of its child pages, so ideally this command can provadie a user of the usage statistic of anythig he wants such as memory space, time..ecc..
+2.  'struct rusage' can output up to 16 different members.
+3.  In order to save some usage it's probably easier to just pass a pointer than a value.
+4.  The 'Main' function scan letter by letter the world in a text file until reach a NULL character. The NULL character signify the end of a word, allowing the loop to update the count and crosscheck it with the spellcheck. If the scanned word contains numbers, special characters or is more than 45 letters long the loop is designed to simply ignore them and move on the next one.
+5.  If by hypotesis we'd used 'scanf' we won't be able to ignore words with numbers or special charachters such as accents.
+6.  Honestly I'm not sure about it, but it may be to avoid that someone could change the program in order to fake it's count.
+7.  I used an hash table, implementing a function that gives a has values to each word fro 0 to 26 based on the starting letter. I moreover managed to traverse that linked list in order to have a better efficiency from the beginning.
+8.  Since my progrm compiles i haven't make any change to it. It's total running time is approximately 0.72 seconds. It may not be the best result around, but i'm proud of it.
+9.  My main struggle was traversing the linked list in order to make it more efficient. (i tought actually was compulsory, just later I've aknowledge the fact that the code would have worked anyway). What I can do is wrtie some parts and make it more short.
+10. The hashing function i've choose to use is for sure not the best performing one regarding strings. I've chose that anyway since I got a better understeanding of it.

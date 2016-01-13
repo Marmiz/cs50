@@ -1,0 +1,33 @@
+<?php
+	//configuration
+	require("../includes/config.php");
+
+	if($_SERVER["REQUEST_METHOD"]=="POST")
+	{
+		//validate the imput
+		if(empty($_POST["symbol"]))
+		{
+			apologize("please, insert a stock symbol");
+		}
+		
+		//query Yahoo to obtain the value
+		$stock= lookup($_POST["symbol"]);
+
+		//validate the imput
+		if ($stock ===false)
+		{
+			apologize("Symbol not found.");
+		}
+
+		else
+		{
+			render("quote.php", ["title"=>"Quote", "symbol"=>$stock["symbol"], "name"=>$stock["name"], "price"=>$stock["price"]]);
+		}
+	
+	}
+
+	else
+	{	
+		render("quote_form.php", ["title"=>"Quote"]);
+	}
+?>

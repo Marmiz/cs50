@@ -1,0 +1,19 @@
+0.  BMP supports 16M of colors, GIF 256, JPEG 16M, lastly PNG supperts 16T.
+1.  GIF supports animations.
+2.  The Lossless compression allows the recostruction of the exact same datas as the original file; on the other hand the lossy compression doesn't restore all the data choosing to eliminate the redoundant informations.
+3.  JPEG
+4.  When the operating system erases a FAT file, two things occur. First, the system modifies the filename’s firstcharacter to signal that the file has been deleted.Second, the system moves all of the file’s FAT clusters to the hard drive’s list of free clusters. The actual filedata is never touched.
+5.  By simply overwrite the data with random 0s and 1s.
+6.  <stint.h> is a file located in the standard C library that allow programmers to write more portable code by providing a set of typedefs   that narrow down specific typedefs in exact-integer types..
+7.  The advantage of using those is that are platform-indipendent.
+8.  BYTE is 8 bit, DWORD and LONG 32bit and WORD is with 16 bit.
+9.  0x42 0x4D
+10. 'Bfsize' is the size in byte of the bitmap file, while 'BfSizeImage' is the same but adding the size of the 2 header file.
+11. The image is upside-down along the vertical axis.
+12. This is defined in biBitCount.
+13. Could happen when a user does not have a permission to copy that file.
+14. We want to copy one individual structure per read, e.g. a complete BITMAPINFOHEADER or an individual RGBTRIPLE.
+15. 1
+16. 'fseek' is used to move a pointer.
+17. SEEK_CUR show the current pointer position.
+18. Not else than Rob Bowden and his Cat.
