@@ -1,6 +1,6 @@
 
 
-### Objectives:
+###Objectives:
 + Get comfortable with Linux.
 + Start thinking more carefully.
 + Solve some problems in C.
